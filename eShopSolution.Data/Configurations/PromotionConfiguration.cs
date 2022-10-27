@@ -7,11 +7,11 @@ using System.Text;
 
 namespace eShopSolution.Data.Configurations
 {
-    public class ContactConfiguration : IEntityTypeConfiguration<Contact>
+    public class PromotionConfiguration : IEntityTypeConfiguration<Promotion>
     {
-        public void Configure(EntityTypeBuilder<Contact> builder)
+        public void Configure(EntityTypeBuilder<Promotion> builder)
         {
-            builder.ToTable("Contacts");
+            builder.ToTable("Promotions");
             builder.HasKey(x => x.Id);
         }
     }

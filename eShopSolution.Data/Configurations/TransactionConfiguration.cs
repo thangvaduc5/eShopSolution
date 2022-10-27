@@ -7,11 +7,11 @@ using System.Text;
 
 namespace eShopSolution.Data.Configurations
 {
-    public class ContactConfiguration : IEntityTypeConfiguration<Contact>
+    public class TransactionConfiguration : IEntityTypeConfiguration<Transaction>
     {
-        public void Configure(EntityTypeBuilder<Contact> builder)
+        public void Configure(EntityTypeBuilder<Transaction> builder)
         {
-            builder.ToTable("Contacts");
+            builder.ToTable("Transactions");
             builder.HasKey(x => x.Id);
         }
     }
