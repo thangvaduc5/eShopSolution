@@ -14,6 +14,9 @@ namespace eShopSolution.Data.Entities
         public Product Product { get; set; }
         public DateTime DateCreated { get; set; }
 
-        
+        //Vì có khóa ngoại đến user
+        public AppUser AppUser { get; set; }
+
+
     }
 }
